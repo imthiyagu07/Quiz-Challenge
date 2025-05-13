@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Challenge</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-row">
+            <h1 class="title">Quiz Challenge</h1>
+            <p class="score"></p>
+            <p class="timer-container">
+                <img src="https://media-hosting.imagekit.io/1871e62f10294fc2/timer.png?Expires=1841675137&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=0J5~9x~7lzhV5QoCYHMwo5wvJ0tVhMJ99w3AsWxzuFqMJnE~K5LfcYeacrWZ2GwPSp5j4KL1fGqrWRIZ14sOHAhblFz-1Gx46DKYtH5HFoYNAi~j34MXjmdJuWQcbOXAaVzWDOh3D2SMXSgI6MxNUiwG8~fXIF~sh-qsyspKNlDB2vfi8dTphe6V4fT3q0R4rIgOsCDhgin6A6G-v2mbsLa6WsOtrtRyQaY3xUItBF2x7IKSpP0DGfXHdbXOb-5refShigqBgOz6rJxoQ9w9dMEL3baaA~pMDbbTLMVcftwpfxxL80xayX21by~8KdSeMyHMvekVnJ0KC15LKQKAqg__" alt="timer" class="timer-icon">
+                <span class="timer">60s</span>
+            </p>
+        </div>
+        <div class="quiz-conatiner">
+            <div class="instruction-container">
+                <h2 class="instruction">Instructions</h2>
+                <ul>
+                    <li>Answer the MCQs types of Question within the time limit.</li>
+                    <li>Each question has 4 options. Select one option.</li>
+                    <li>Give Correct answer to get +5. If wrong answer you get -1 from score.</li>
+                    <li>Click on Next Question to go to the next question.</li>
+                    <li>Click on Start Quiz to start the quiz and the timer is on.</li>
+                    <li>Test Your General Knowledge. Best of luck!</li>
+                </ul>
+                <div class="start-quiz-container">
+                    <button class="start-quiz">Start Quiz</button>
+                </div>
+            </div>
+            <div class="quiz-questions-ans-container">
+                <div class="question-container">
+                    <h2 class="question"></h2>
+                    <p class="question-text"></p>
+                </div>
+                <div class="options-container">
+                </div>
+                <div class="next-button-container">
+                    <button class="next-button">Next Question</button>
+                </div>
+            </div>
+            <div class="result-container">
+                <h1 class="your-score-text">Your Score <br> <span class="final-score">60</span></h1>
+                <p class="result-details">No.of.Questions Attend: <span class="attend-ques">0</span></p>
+                <p class="result-details">No.of.Questions Skipped: <span class="skipped-ques">0</span></p>
+                <p class="result-details">No.of.Questions Correct: <span class="correct-ques">0</span></p>
+                <p class="result-details">No.of.Questions Wrong: <span class="wrong-ques">0</span></p>
+                <div class="try-again-button-container">
+                    <button class="try-again">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+.container{
+    background-color: rgb(3, 16, 97);
+    height: 100vh;
+}
+
+.top-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    padding-right: 100px;
+    padding-left: 80px;
+}
+
+.title{
+    color: rgb(3, 16, 97);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.score{
+    color: rgb(3, 16, 97);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.timer-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+}
+
+.timer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+}
+
+.timer{
+    color: rgb(3, 16, 97);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.quiz-conatiner{
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    padding: 30px;
+}
+
+.instruction-container{
+    background-color: white;
+    color: rgb(3, 16, 97);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.instruction{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+ul{
+    margin-left: 30px;
+}
+
+ul li{
+    padding: 5px;
+    font-size: 15px;
+}
+
+.start-quiz-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.start-quiz{
+    background-color: rgb(3, 16, 97);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.quiz-questions-ans-container{
+    background-color: white;
+    color: rgb(3, 16, 97);
+    padding: 30px;
+    border-radius: 10px;
+    display: none;
+}
+
+.question{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.question-text{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.options-container{
+    display: flex;
+    flex-direction: column; 
+}
+
+.option{
+    text-align: left;
+    padding: 10px;
+    margin: 5px 0;
+    color: rgb(3, 16, 97);
+    font-weight: bold;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border: 1px solid rgb(3, 16, 97);
+}
+
+.next-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.next-button{
+    background-color: rgb(3, 16, 97);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.correct{
+    background-color: rgb(111, 237, 111);
+    border: none;
+}
+
+.incorrect{
+    background-color: rgb(221, 97, 97);
+    border: none;
+}
+
+.result-container{
+    background-color: white;
+    color: rgb(3, 16, 97);
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    display: none;
+}
+
+.your-score-text{
+    font-family: 'Bebas Neue';
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.result-details{
+    font-size: 1.3rem;
+    margin-top: 7px;
+    font-family: 'Bebas Neue';
+    padding-left: 20px;
+}
+
+.try-again-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.try-again{
+    background-color: rgb(3, 16, 97);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 450px){
+    .title{
+        font-size: 0.8rem;
+    }
+    .score{
+        font-size: 1rem;
+    }
+    .timer-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .timer{
+        font-size: 1rem;
+    }
+    .instruction{
+        font-size: 1rem;
+    }
+    ul li{
+        font-size: 12px;
+    }
+    .result-container{
+        width: 230px;
+    }
+    .your-score-text{
+        font-size: 2.5rem;
+    }
+    .result-details{
+        font-size: 1rem;
+    }
+    .question-text{
+        font-size: 1rem;
+    }
+    .top-row{
+        padding-right: 40px;
+        padding-left: 20px;
+    }
+}
